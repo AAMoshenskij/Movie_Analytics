@@ -5,12 +5,8 @@
 
 Оркестрация всего пайплайна данных осуществляется через Apache Airflow, который автоматизирует процессы от проверки здоровья сервисов до генерации финальных отчетов. В реальном времени рассчитываются ключевые бизнес-метрики: время просмотра на пользователя и популярность контента.
 
-Для визуализации используется Apache Superset с набором интерактивных дашбордов, отображающих текущую активность пользователей, тренды просмотров и технические показатели системы. Вот примеры <a href=https://github.com/AAMoshenskij/Movie_Analytics/blob/main/movie-analytics-dashboard-graphics.jpg>графиков</a> и <a href=https://github.com/AAMoshenskij/Movie_Analytics/blob/main/movie-analytics-dashboard-tables.jpg>графиков</a>. Инфраструктура полностью контейнеризована с помощью Docker, что обеспечивает простоту развертывания и масштабирования.
+Для визуализации используется Apache Superset с набором интерактивных дашбордов, отображающих текущую активность пользователей, тренды просмотров и технические показатели системы. Вот примеры <a href=https://github.com/AAMoshenskij/Movie_Analytics/blob/main/movie-analytics-dashboard-graphics.jpg>графиков</a> и <a href=https://github.com/AAMoshenskij/Movie_Analytics/blob/main/movie-analytics-dashboard-tables.jpg>таблиц</a>. Инфраструктура полностью контейнеризована с помощью Docker, что обеспечивает простоту развертывания и масштабирования.
 
 Проект демонстрирует полный цикл работы с потоковыми данными - от приема и валидации событий до сложных агрегаций и бизнес-аналитики. 
 
 **Ключевые технологии:** Apache Airflow, Kafka, Spark Streaming, PostgreSQL, Superset, Docker, Python, Celery.
-
-https://github.com/AAMoshenskij/Movie_Analytics/blob/main/movie-analytics-dashboard-tables.jpg
-
-
