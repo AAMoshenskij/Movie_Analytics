@@ -1,0 +1,5 @@
+# requirements.txt
+pandas==1.5.3
+psycopg2-binary==2.9.5
+sqlalchemy==1.4.46
+kafka-python==2.0.2

@@ -1,0 +1,26 @@
+dashboard_title: "Movie Streaming Analytics"
+description: "Real-time analytics for movie streaming platform"
+
+charts:
+  - chart_name: "Real-time Views by Device"
+    viz_type: "line"
+    params:
+      datasource: "user_views_processed"
+      metrics: ["COUNT(*)"]
+      groupby: ["device"]
+      time_range: "Last 24 hours"
+      
+  - chart_name: "Top Movies"
+    viz_type: "table"
+    params:
+      datasource: "movie_stats_realtime"
+      metrics: ["view_count"]
+      groupby: ["movie_id"]
+      row_limit: 10
+      
+  - chart_name: "User Retention"
+    viz_type: "big_number"
+    params:
+      datasource: "daily_metrics"
+      metric: "retention_rate"
+      time_range: "Last 7 days"
